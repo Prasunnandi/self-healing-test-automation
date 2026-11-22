@@ -1,0 +1,9 @@
+test_id,test_suite,test_case_name,target_element,original_selector,broken_reason,healed_selector,similarity_score,visual_diff_pct,healing_status,execution_time_ms,ci_run_id
+TC-E2E-101,Auth_Checkout_Flow,User Checkout Submit Button,Primary Action Button,#btn-checkout-v2,CSS Class & Dynamic ID Mutation,button[data-testid='complete-purchase-btn'],0.962,0.02,HEALED,842,CI-BUILD-9921
+TC-E2E-102,Subscription_Billing,Billing Address Input Field,Street Address Line 1,input#shipping-addr-legacy,DOM Hierarchy Restructured,input[name='billingAddress1'],0.938,0.00,HEALED,615,CI-BUILD-9921
+TC-E2E-103,Catalog_Search,Search Filter Chip Dropdown,Category Pill Selector,div.css-19xa81-filter,Obfuscated Styled-Component Hash,div[role='combobox'][aria-label='Filter category'],0.915,0.04,HEALED,1120,CI-BUILD-9922
+TC-E2E-104,User_Profile_Settings,Two-Factor Toggle Switch,MFA Activation Toggle,button#mfa-toggle-old,Attribute Deprecated,button[aria-checked='true'][data-feature='mfa'],0.949,0.00,HEALED,490,CI-BUILD-9922
+TC-E2E-105,Order_History_Export,Download CSV Export Anchor,Export Report Link,a.btn-export-csv,Replaced with SVG Icon Button,button[data-action='export-csv-reports'],0.892,0.12,HEALED,780,CI-BUILD-9923
+TC-E2E-106,Invoice_Payment_Modal,Stripe Credit Card Iframe,Card CVC Input Field,#card-cvc-frame,Iframe Sandbox Hierarchy Change,iframe[name='__privateStripeFrameCard'],0.975,0.00,HEALED,1450,CI-BUILD-9923
+TC-E2E-107,Team_Invite_Modal,Add Teammate Email Tag,Multi-Select Tag Input,input.tagify__input,Framework Upgraded to HeadlessUI,input[placeholder='Enter email addresses...'],0.885,0.01,HEALED,530,CI-BUILD-9924
+TC-E2E-108,Dashboard_Telemetry,Real-time QPS Sparkline Canvas,Telemetry Render Canvas,#qps-chart-canvas,Canvas ID Changed to UUID,canvas[data-chart='qps-telemetry'],0.954,0.00,HEALED,390,CI-BUILD-9924
